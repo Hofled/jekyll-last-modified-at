@@ -16,7 +16,7 @@ end
 
 Spork.each_run do
   # This code will be run each time you run your specs.
-  require File.expand_path('lib/jekyll-last-modified-at.rb')
+  require File.expand_path('lib/jekyll-last-modified-date.rb')
 end
 
 RSpec.configure do |config|

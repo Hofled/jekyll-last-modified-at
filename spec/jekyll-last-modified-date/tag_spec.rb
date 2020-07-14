@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-describe(Jekyll::LastModifiedAt::Tag) do
+describe(Jekyll::LastModifiedDate::Tag) do
   let(:source) { @fixtures_path }
   let(:dest)   { source.join('_site') }
   let(:site)   do

@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require File.expand_path('lib/jekyll-last-modified-at/version.rb', __dir__)
+require File.expand_path('lib/jekyll-last-modified-date/version.rb', __dir__)
 Gem::Specification.new do |s|
   s.name                  = 'jekyll-last-modified-date'
-  s.version               = Jekyll::LastModifiedAt::VERSION
+  s.version               = Jekyll::LastModifiedDate::VERSION
   s.summary               = 'A liquid tag for Jekyll to indicate the last time a file was modified.'
   s.authors               = 'Garen J. Torikian'
   s.homepage              = 'https://github.com/Hofled/jekyll-last-modified-at'

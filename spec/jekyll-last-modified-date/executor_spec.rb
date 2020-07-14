@@ -2,7 +2,7 @@
 
 require 'spec_helper'
 
-describe(Jekyll::LastModifiedAt::Executor) do
+describe(Jekyll::LastModifiedDate::Executor) do
   it 'gets and strips the output' do
     expect(described_class.sh('echo', 'ohai')).to eql('ohai')
   end

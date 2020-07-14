@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Jekyll
-  module LastModifiedAt
+  module LastModifiedDate
     class Tag < Liquid::Tag
       def initialize(tag_name, format, tokens)
         super
@@ -19,4 +19,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_tag('last_modified_date', Jekyll::LastModifiedAt::Tag)
+Liquid::Template.register_tag('last_modified_date', Jekyll::LastModifiedDate::Tag)

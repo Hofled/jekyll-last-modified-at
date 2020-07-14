@@ -3,7 +3,7 @@
 require 'spec_helper'
 require 'tempfile'
 
-describe(Jekyll::LastModifiedAt::Determinator) do
+describe(Jekyll::LastModifiedDate::Determinator) do
   let(:site_source) { @fixtures_path }
   let(:page_path)   { @fixtures_path.join('_posts').join('1984-03-06-command.md') }
   let(:mod_time)    { Time.new(2019, 11, 17, 15, 35, 32, '+00:00') }

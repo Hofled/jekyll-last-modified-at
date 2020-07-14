@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Jekyll
-  module LastModifiedAt
+  module LastModifiedDate
     module Hook
       def self.add_determinator_proc
         proc { |item|

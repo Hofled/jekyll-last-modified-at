@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Jekyll
-  module LastModifiedAt
+  module LastModifiedDate
     class Determinator
       attr_reader :site_source, :page_path
       attr_accessor :format

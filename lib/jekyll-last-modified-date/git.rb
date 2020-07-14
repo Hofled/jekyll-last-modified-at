@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Jekyll
-  module LastModifiedAt
+  module LastModifiedDate
     class Git
       attr_reader :site_source
 

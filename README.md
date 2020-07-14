@@ -10,7 +10,7 @@ Open your Gemfile in your Jekyll root folder and add the following:
 
 ``` ruby
 group :jekyll_plugins do
-  gem "jekyll-last-modified-at"
+  gem "jekyll-last-modified-date"
 end
 ```
 
@@ -18,10 +18,10 @@ Add the following to your site's `_config.yml` file
 
 ```yml
 plugins:
-  - jekyll-last-modified-at
+  - jekyll-last-modified-date
 
 # Optional. The default date format, used if none is specified in the tag.
-last-modified-at:
+last-modified-date:
     date-format: '%d-%b-%y'
 ```
 

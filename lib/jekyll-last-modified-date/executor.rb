@@ -3,7 +3,7 @@
 require 'posix/spawn'
 
 module Jekyll
-  module LastModifiedAt
+  module LastModifiedDate
     module Executor
       extend POSIX::Spawn
 
