@@ -32,7 +32,7 @@ There are a few ways to use this gem.
 You can place the following tag somewhere within your layout:
 
 ``` liquid
-{% last_modified_at %}
+{% last_modified_date %}
 ```
 
 By default, this creates a time format matching `"%d-%b-%y"` (like "04-Jan-14").
@@ -40,20 +40,20 @@ By default, this creates a time format matching `"%d-%b-%y"` (like "04-Jan-14").
 You can also choose to pass along your own time format. For example:
 
 ```liquid
-{% last_modified_at %Y:%B:%A:%d:%S:%R %}
+{% last_modified_date %Y:%B:%A:%d:%S:%R %}
 ```
 That produces "2014:January:Saturday:04."
 
 You can also call the method directly on a Jekyll "object," like so:
 
 ``` liquid
-{{ page.last_modified_at }}
+{{ page.last_modified_date }}
 ```
 
 To format such a time, you'll need to rely on Liquid's `date` filter:
 
 ``` liquid
-{{ page.last_modified_at | date: '%Y:%B:%A:%d:%S:%R' }}
+{{ page.last_modified_date | date: '%Y:%B:%A:%d:%S:%R' }}
 ```
 
-(It's generally [more performant to use the `page.last_modified_at` version](https://github.com/gjtorikian/jekyll-last-modified-at/issues/24#issuecomment-55431108) of this plugin.)
+(It's generally [more performant to use the `page.last_modified_date` version](https://github.com/gjtorikian/jekyll-last-modified-at/issues/24#issuecomment-55431108) of this plugin.)
